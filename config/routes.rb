@@ -53,6 +53,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get '/items/new' => 'items#new'
   get '/items/:id' => 'items#show'
   get '/items' => 'items#index'
+  post '/items' => 'items#create'
 end
