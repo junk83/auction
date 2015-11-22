@@ -54,4 +54,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   get '/items/:id' => 'items#show'
+  get '/items' => 'items#index'
 end
